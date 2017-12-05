@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+function ports {
+	if [ -n "$1" ]; then
+		lsof -wni tcp:$1
+	else
+		echo "Make sure to provide the port's number. Example: ports 3000"
+	fi;
+}
+
+function kill {
+	if [ -n "$1" ]; then
+    lsof -ti:$1 | xargs kill
+	else
+		echo "Provide the port. Example: kill 3000"
+	fi;
+}
+
+function pullall {
+	for d in *; do
+		echo $'\n'
+		echo $d
+		cd $d
+		git checkout master
+		git pull
+		cd ..
+	done
+}
+
+function https-server {
+  http-server --ssl --cert ~/.localhost-ssl/localhost.crt --key ~/.localhost-ssl/localhost.key
+}
