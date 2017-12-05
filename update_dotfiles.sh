@@ -11,3 +11,11 @@ cp ~/.functions ./
 
 echo "copying bash_prompt"
 cp ~/.bash_prompt ./
+
+echo "pusing to github"
+git pull
+git add .
+git commit -m "updating dotfiles"
+git push
+
+echo "Updated ✨"
