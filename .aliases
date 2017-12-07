@@ -8,3 +8,9 @@ alias reload="exec $SHELL -l"
 
 # hub
 alias git=hub
+
+# rails server
+alias bers=bundle exec rails s
+
+# rails console
+alias berc=bundle exec rails c
