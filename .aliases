@@ -10,3 +10,5 @@ alias reload="exec $SHELL -l"
 alias git=hub
 
 alias be="bundle exec"
+
+alias atom="atom ."
