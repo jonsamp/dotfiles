@@ -9,8 +9,11 @@ cp ~/.aliases ./
 echo "copying functions"
 cp ~/.functions ./
 
-echo "copying bash_prompt"
-cp ~/.bash_prompt ./
+echo "copying .zshrc"
+cp ~/.zshrc ./
+
+echo "copying .zpreztorc"
+cp ~/.zpreztorc ./
 
 echo "pusing to github"
 git pull

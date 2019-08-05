@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
 # Make atom the default editor.
-export EDITOR='atom';
+export EDITOR='code'
+export ANDROID_HOME='/Users/jon/Library/Android/sdk'
+export PATH=~/Library/Android/sdk/platform-tools:$PATH
