@@ -24,8 +24,10 @@ export SPACESHIP_PROMPT_ADD_NEWLINE=true
 export SPACESHIP_TIME_SHOW=true
 export SPACESHIP_DIR_PREFIX=""
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+
 
 # Customize to your needs...
-for file in ~/.{exports,exports-cc,aliases,aliases-cc,functions,functions-cc}; do
+for file in ~/.{exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;

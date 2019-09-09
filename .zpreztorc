@@ -1,3 +1,4 @@
+
 #
 # Sets Prezto options.
 #
@@ -37,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'autosuggestions' \
   'contrib-prompt' \
   'prompt'
 
@@ -45,7 +47,8 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions' color 'grey'
+zstyle ':prezto:module:autosuggestions:color' found 'gray'
 
 #
 # Completions
