@@ -10,9 +10,7 @@ alias reload="source ~/.zshrc"
 alias git=hub
 
 alias be="bundle exec"
-alias atom="atom ."
 alias code="code ."
 alias dev="cd ~/dev/"
 alias master="git checkout master"
-alias merge_master="git merge origin/master"
-alias personal="cd ~/dev/personal-dev/"
+alias save_dotfiles="cd ~/Dropbox/Development/dotfiles/ && sh update_dotfiles.sh"
