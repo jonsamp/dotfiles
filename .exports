@@ -1,6 +1,31 @@
 #!/usr/bin/env bash
 
-# Make atom the default editor.
+# Make VSCode the default editor.
 export EDITOR='code'
-export ANDROID_HOME='/Users/jon/Library/Android/sdk'
-export PATH=~/Library/Android/sdk/platform-tools:$PATH
+
+# Expo
+export GOOGLE_APPLICATION_CREDENTIALS="k8s/staging/secrets/gcp-credentials.json"
+
+# expo snack-web
+export SNACK_PORT=3011
+export SNACK_SEGMENT_KEY=""
+export SNACK_SENTRY_DSN=""
+export SNACK_SERVER_HOST=snack.expo.test
+export SNACK_SERVER_PROTOCOL=https
+export API_SERVER_URL=https://staging.expo.io
+# export API_SERVER_INTERNAL_URL=http://localhost:3000
+# export WEB_SEGMENT_KEY=eBBqxV7HMCigR7lovaHoFluIsNRLA6Bn
+export IMPORT_SERVER_URL=https://staging.snackager.expo.io
+export DEPLOY_ENVIRONMENT=staging
+# export DEPLOYMENT_ENVIRONMENT=development
+# export SERVER_CLIENT_HOST=http://localhost:3001
+# export PORT=3001
+export SNACK_APP_URL=http://s3.us-west-1.amazonaws.com/snack-web-player-staging/36
+
+# Android Studio
+export ANDROID_SDK=~/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools

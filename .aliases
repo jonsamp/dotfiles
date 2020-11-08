@@ -9,8 +9,17 @@ alias reload="source ~/.zshrc"
 # hub
 alias git=hub
 
-alias be="bundle exec"
 alias code="code ."
 alias dev="cd ~/dev/"
+alias devexpo="cd ~/dev/expo/"
 alias master="git checkout master"
+alias force="git push --force"
+alias rebase="git rebase -i master"
 alias save_dotfiles="cd ~/Dropbox/Development/dotfiles/ && sh update_dotfiles.sh"
+
+alias expod="~/dev/expo/expo-cli/packages/expo-cli/bin/expo.js"
+alias universe="~/dev/expo/universe/"
+alias www="~/dev/expo/universe/server/www/"
+alias website="~/dev/expo/universe/server/website"
+alias snack="~/dev/universe/server/snack"
+alias docs="~/dev/expo/expo/docs"
