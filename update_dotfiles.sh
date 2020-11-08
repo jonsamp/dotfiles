@@ -30,6 +30,9 @@ cp ~/.zshenv ./
 echo "copying .zshrc"
 cp ~/.zshrc ./
 
+echo "copying os-setup-script.sh"
+cp ~/os-setup-script.sh ./
+
 echo "pusing to github"
 git pull
 git add .
