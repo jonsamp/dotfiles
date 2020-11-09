@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "copying aliases"
+echo "copying .config/starship.toml"
 cp ~/.config/starship.toml ./.config
 
 echo "copying aliases"
@@ -12,16 +12,16 @@ cp ~/.exports ./
 echo "copying functions"
 cp ~/.functions ./
 
-echo "copying .zpreztorc"
+echo "copying .zlogin"
 cp ~/.zlogin ./
 
-echo "copying .zpreztorc"
+echo "copying .zlogout"
 cp ~/.zlogout ./
 
-echo "copying .zpreztorc"
+echo "copying .zprofile"
 cp ~/.zprofile ./
 
-echo "copying .zpreztorc"
+echo "copying .zshenv"
 cp ~/.zshenv ./
 
 echo "copying .zshrc"
