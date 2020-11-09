@@ -19,9 +19,6 @@ echo "copying .zpreztorc"
 cp ~/.zlogout ./
 
 echo "copying .zpreztorc"
-cp ~/.zpreztorc ./
-
-echo "copying .zpreztorc"
 cp ~/.zprofile ./
 
 echo "copying .zpreztorc"
