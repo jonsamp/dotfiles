@@ -21,6 +21,7 @@ export DEPLOY_ENVIRONMENT=staging
 # export SERVER_CLIENT_HOST=http://localhost:3001
 # export PORT=3001
 export SNACK_APP_URL=http://s3.us-west-1.amazonaws.com/snack-web-player-staging/36
+export CLOUDSDK_PYTHON=python3.8
 
 # Android Studio
 export ANDROID_SDK=~/Library/Android/sdk
