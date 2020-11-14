@@ -30,7 +30,7 @@ cp ~/.zshrc ./
 echo "copying os-setup-script.sh"
 cp ~/os-setup-script.sh ./
 
-echo "pusing to github"
+echo "pushing to github"
 git pull
 git add .
 git commit -m "updating dotfiles"

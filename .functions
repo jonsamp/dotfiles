@@ -29,12 +29,19 @@ function pullall {
 
 function prunebranches {
 	master
-	git remote prune origin --dry-run | grep origin/@jonsamp | sed 's/^.*origin\///g' | xargs -L1 -J % git branch -D %
+	git remote prune origin --dry-run | grep origin/@jonsamp | sed 's/^.*origin\///g' | xargs -L1 -J % git push origin --delete %
 }
 
 function dotfiles {
 	cwd=$(pwd)
 	cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Files/development/dotfiles
 	sh update_dotfiles.sh
+	cd $cwd
+}
+
+function import_dotfiles {
+	cwd=$(pwd)
+	cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Files/development/dotfiles
+	sh import_dotfiles.sh
 	cd $cwd
 }
