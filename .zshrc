@@ -23,7 +23,10 @@ export PATH="$(yarn global bin):$PATH"
 
 # The next line enables shell command completion for gcloud.
 # if [ -f '/Users/jon/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/completion.zsh.inc'; fi
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.npm-packages/bin:$PATH"
+export PATH="/usr/lib/google-cloud-sdk/bin:$PATH"
+
 eval "$(direnv hook zsh)"

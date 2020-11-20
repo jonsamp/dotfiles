@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function reload {
+	source ~/.zshrc
+}
+
 function ports {
 	if [ -n "$1" ]; then
 		lsof -wni tcp:$1
@@ -25,11 +29,6 @@ function pullall {
 		git pull
 		cd ..
 	done
-}
-
-function prunebranches {
-	master
-	git remote prune origin --dry-run | grep origin/@jonsamp | sed 's/^.*origin\///g' | xargs -L1 -J % git push origin --delete %
 }
 
 function dotfiles {
