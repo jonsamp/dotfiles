@@ -6,7 +6,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # hub
 alias git=hub
 
-alias code="code ."
+alias code="code-insiders"
 alias dev="cd ~/dev/"
 alias devexpo="cd ~/dev/expo/"
 alias master="git checkout master"

@@ -15,18 +15,21 @@ fi
 # End Nix
 
 
-export PATH="$(yarn global bin):$PATH"
+# export PATH="$(yarn global bin):$PATH"
 
 
 # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/jon/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/jon/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/jon/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/jon/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/completion.zsh.inc'; fi
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.npm-packages/bin:$PATH"
 export PATH="/usr/lib/google-cloud-sdk/bin:$PATH"
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 eval "$(direnv hook zsh)"
