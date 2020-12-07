@@ -15,9 +15,6 @@ fi
 # End Nix
 
 
-# export PATH="$(yarn global bin):$PATH"
-
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jon/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jon/google-cloud-sdk/path.zsh.inc'; fi
 

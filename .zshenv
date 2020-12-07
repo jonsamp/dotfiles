@@ -14,3 +14,5 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 if [ -e /Users/jon/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jon/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# export ANDROID_SDK=/Users/jon/Library/Android/sdk
+# export PATH=/Users/jon/Library/Android/sdk/platform-tools:$PATH

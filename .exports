@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make VSCode the default editor.
-export EDITOR='code'
+export EDITOR='code-exploration'
 
 # Expo
 export GOOGLE_APPLICATION_CREDENTIALS="k8s/staging/secrets/gcp-credentials.json"
@@ -12,14 +12,7 @@ export SNACK_SEGMENT_KEY=""
 export SNACK_SENTRY_DSN=""
 export SNACK_SERVER_HOST=snack.expo.test
 export SNACK_SERVER_PROTOCOL=https
-export API_SERVER_URL=https://staging.expo.io
-# export API_SERVER_INTERNAL_URL=http://localhost:3000
-# export WEB_SEGMENT_KEY=eBBqxV7HMCigR7lovaHoFluIsNRLA6Bn
 export IMPORT_SERVER_URL=https://staging.snackager.expo.io
-export DEPLOY_ENVIRONMENT=staging
-# export DEPLOYMENT_ENVIRONMENT=development
-# export SERVER_CLIENT_HOST=http://localhost:3001
-# export PORT=3001
 export SNACK_APP_URL=http://s3.us-west-1.amazonaws.com/snack-web-player-staging/36
 export CLOUDSDK_PYTHON=/usr/bin/python
 

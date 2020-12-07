@@ -1,0 +1,53 @@
+[status]
+	submoduleSummary = true
+[user]
+	name = jonsamp
+	email = sampjon@gmail.com
+[core]
+	editor = code-exploration --wait
+[pull]
+	rebase = true
+[merge]
+	conflictstyle = diff3
+[alias]
+  s = status -sb
+	cm = !git add -A && git commit -m
+	cma = !git add -A && git commit -m
+	cob = checkout -b
+	co = checkout
+	b = branch
+	save = !git add -A && git commit -m 'SAVEPOINT'
+  wip = commit -am "WIP"
+
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+[color]
+  ui = auto
+
+[color "branch"]
+
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+
+	meta = yellow
+	frag = magenta # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[help]
+
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1

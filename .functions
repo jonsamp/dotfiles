@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 function reload {
+	exec $SHELL
 	source ~/.zshrc
 }
 
