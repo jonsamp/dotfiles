@@ -90,12 +90,11 @@ declare -a APP_STORE_APPLICATIONS=(
     "1303222628" # Paprika Recipe Manager 3 (3.4.3)
     "1091189122" # Bear (1.7.8)
     "1450874784" # Transporter (1.1)
-    "1384080005" # Tweetbot (3.3.3)
     "1384080005" # Tweetbot 3 for Twitter
     "405399194"  # Kindle
     "1529448980" # Reeder 5
-    "1410709951" # Smart Countdown Timer
     "409203825"  # Numbers
+    # gestimer
 )
 
 for val in "${REMAINING_APPS[@]}"; do
@@ -110,8 +109,8 @@ echo "Apps left to download:"
 echo ""
 
 declare -a REMAINING_APPS=(
-    'ScreenFlow v6: http://www.telestream.net/download-files/screenflow/6-2/ScreenFlow-6.2.4.dmg'
-    'Alfred 3: https://cachefly.alfredapp.com/Alfred_3.8.6_972.dmg'
+    'ScreenFlow v9: http://www.telestream.net/screenflow/upgrade.htm'
+    'Alfred: https://www.alfredapp.com'
 )
 
 for val in "${REMAINING_APPS[@]}"; do

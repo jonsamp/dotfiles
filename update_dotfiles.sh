@@ -9,14 +9,14 @@ cp ~/.aliases ./
 echo "copying exports"
 cp ~/.exports ./
 
+echo "copying gitconfig"
+cp ~/.gitconfig ./
+
 echo "copying functions"
 cp ~/.functions ./
 
-echo "copying .zlogin"
-cp ~/.zlogin ./
-
-echo "copying .zlogout"
-cp ~/.zlogout ./
+echo "copying .profile"
+cp ~/.profile ./
 
 echo "copying .zprofile"
 cp ~/.zprofile ./
@@ -26,9 +26,6 @@ cp ~/.zshenv ./
 
 echo "copying .zshrc"
 cp ~/.zshrc ./
-
-echo "copying os-setup-script.sh"
-cp ~/os-setup-script.sh ./
 
 echo "pushing to github"
 git pull

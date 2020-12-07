@@ -14,11 +14,11 @@ cp ./.exports ~/.exports
 echo "importing .functions"
 cp ./.functions ~/.functions
 
-echo "importing .zlogin"
-cp ./.zlogin ~/.zlogin
+echo "importing .gitconfig"
+cp ./.gitconfig ~/.gitconfig
 
-echo "importing .zlogout"
-cp ./.zlogout ~/.zlogout
+echo "importing .profile"
+cp ./.profile ~/.profile
 
 echo "importing .zprofile"
 cp ./.zprofile ~/.zprofile
