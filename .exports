@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make VSCode the default editor.
-export EDITOR='code-exploration'
+export EDITOR='code-insiders'
 
 # Expo
 export GOOGLE_APPLICATION_CREDENTIALS="k8s/staging/secrets/gcp-credentials.json"

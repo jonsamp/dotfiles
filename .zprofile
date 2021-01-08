@@ -17,7 +17,7 @@ fi
 # Editors
 #
 
-export EDITOR='code-exploration'
+export EDITOR='code-insiders'
 export VISUAL='nano'
 export PAGER='less'
 
