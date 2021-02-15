@@ -15,7 +15,7 @@ function ports {
 
 function kill {
 	if [ -n "$1" ]; then
-    lsof -ti:$1 | xargs kill
+    lsof -ti:$1 | xargs kill -9
 	else
 		echo "Provide the port. Example: kill 3000"
 	fi;

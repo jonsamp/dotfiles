@@ -9,10 +9,10 @@ alias git=hub
 alias code="code-insiders"
 alias dev="cd ~/dev/"
 alias devexpo="cd ~/dev/expo/"
-alias master="git checkout master"
+alias master='echo "ℹ️  Did you mean main?"'
 alias main="git checkout main"
 alias force="git push --force"
-alias rebase="git rebase -i master"
+alias rebase="git rebase -i main"
 alias save_dotfiles="cd ~/Dropbox/Development/dotfiles/ && sh update_dotfiles.sh"
 
 alias expod="~/dev/expo/expo-cli/packages/expo-cli/bin/expo.js"
