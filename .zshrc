@@ -30,4 +30,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export VOLTA_HOME="/Users/jon/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
 if [ -e /Users/jon/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jon/.nix-profile/etc/profile.d/nix.sh; fi
+
 eval "$(direnv hook zsh)"
